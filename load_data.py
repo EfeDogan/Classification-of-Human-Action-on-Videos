@@ -52,7 +52,7 @@ def load_and_preprocess_data():
                 all_labels.append(action)
                 video_lengths.append(len(flattened_poses))
             except Exception as e:
-                print(f"Hata: {f_path} - {e}")
+                print(f"Error: {f_path} - {e}")
 
     # Video length analysis
     video_lengths = np.array(video_lengths)
